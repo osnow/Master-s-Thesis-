@@ -1,0 +1,7 @@
+args = commandArgs(trailingOnly=TRUE)
+df<-as.data.frame(read.table(file=args[1]))
+library('plyr')
+summed<-ddply(df, "df$V1", numcolwise(sum))
+summed<-cbind(summed,summed$V2/5/as.integer(args[2])*100)
+colnames(summed)<-c("pair","total","percentage")
+write.table(file=args[3],row.names=FALSE,col.names=FALSE,as.table(cbind(as.vector(summed$pair),as.vector(summed$percentage))))

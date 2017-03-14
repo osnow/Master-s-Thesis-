@@ -1,0 +1,8 @@
+ref=$1
+traj=$2
+out=$3
+TM_sel=$4
+EC_sel=$5
+
+/Applications/VMD1.9.3.app/Contents/MacOS/startup.command -dispdev text -e old_EC-TM_twist.tcl -args $ref $traj $out $TM_sel $EC_sel
+
