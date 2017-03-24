@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#Makes interactive plots for the different angles 
+
 #plot domain twist
 /opt/local/bin/python2.7 ~/Analysis/scripts/domain-twist/plot_domain_twist.py dtwist.dat
 

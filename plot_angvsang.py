@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+#uses seaborn to plot the different angles vs eachother to see if there is any
+#relationship - so far this is not that useful as there is no clear correlation
+
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
